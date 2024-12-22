@@ -20,10 +20,11 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 920px;
-    margin: 20px auto;
+    max-width: 1000px; /* Match the content width */
+    margin: 20px auto; /* Center the header */
     padding: 0 10px;
 }
+
 
 header h1 {
     margin: 0;
@@ -57,26 +58,32 @@ h2 {
     color: #fff;
 }
 
-
 main {
     width: 100%;
-    max-width: 400px;
+    max-width: 1000px; /* Match header width */
     padding: 20px;
+    margin: 0 auto; /* Center the main content */
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     text-align: left; /* Align text to the left */
 }
+
+.main.home {
+    max-width: 1000px; /* Match header width */
+    padding: 20px; /* Ensure consistent padding */
+    margin: 0 auto; /* Center the content */
+    text-align: center; /* Center align for index page */
+}
+
+
 
 section {
     margin-bottom: 20px;
     text-align: left; /* Align text to the left */
 }
 
-
 html {
     overflow-y: scroll; /* Forces the vertical scrollbar to always appear */
 }
-
 
 .appstore-download {
     text-align: center; /* Centers the app store download section */
@@ -87,27 +94,19 @@ html {
     width: 250px; /* Set fixed width */
     height: auto;
 }
-
-
-.main.home {
-    max-width: 1000px;
-    min-width: 1000px;
-}
-
 h2 {
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 2.0rem;
+    font-size: 1.7rem;
     margin-bottom: 20px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
-
 p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 10px 0;
 }
 
@@ -115,8 +114,11 @@ footer {
     text-align: center;
     font-size: 0.8rem;
     margin: 20px auto;
+    max-width: 1000px; /* Match header and main width */
+    padding: 0 10px;
     width: 100%;
 }
+
 
 a {
     color: #007bff;
@@ -131,4 +133,99 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header content */
+        align-items: center;
+    }
+
+    header nav {
+        justify-content: center; /* Center navigation */
+        gap: 10px; /* Adjust spacing */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .main.home {
+        max-width: 90%; /* Reduce width for smaller devices */
+    }
+
+    .appstore-download img {
+        width: 200px; /* Reduce App Store button size */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem; /* Smaller title for very small screens */
+    }
+
+    header nav a {
+        font-size: 1.2rem; /* Smaller navigation links */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .appstore-download img {
+        width: 150px; /* Further reduce App Store button size */
+    }
+}
+
+/* Screenshot Gallery */
+.screenshot-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px; /* Match header and main width */
+    margin: 0 auto; /* Center the gallery */
+}
+
+
+.screenshot-gallery img {
+    width: 100%;              /* Default width */
+    max-width: 300px;         /* Restrict the maximum width for images */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex: 1 1 calc(33.333% - 40px); /* Three images per row with gaps */
+}
+
+/* Responsive Adjustments for Screens */
+@media (max-width: 768px) {
+    .screenshot-gallery img {
+        flex: 1 1 calc(50% - 20px); /* Two images per row for smaller devices */
+        max-width: 200px;          /* Reduce max width on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshot-gallery img {
+        flex: 1 1 100%; /* One image per row for very small screens */
+        max-width: 100%; /* Full width for small screens */
+    }
 }
