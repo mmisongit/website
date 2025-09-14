@@ -3,39 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unroller</title>
+    <title>Unroller - Transform Your Photo Chaos Into Perfect Organization</title>
+    <meta name="description" content="Automatically sort and organize your photos by albums, months, and categories. Download Unroller now and never lose a memory again.">
+    <meta name="apple-itunes-app" content="app-id=6739699580">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Unroller - Transform Your Photo Chaos Into Perfect Organization">
+    <meta property="og:description" content="Automatically sort and organize your photos by albums, months, and categories. Download Unroller now and never lose a memory again.">
+    <meta property="og:image" content="media/Frame 41.png">
+    <meta property="og:url" content="https://mmisongit.github.io/website/">
+    <link rel="canonical" href="https://mmisongit.github.io/website/">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Unroller - Transform Your Photo Chaos Into Perfect Organization">
+    <meta property="twitter:description" content="Automatically sort and organize your photos by albums, months, and categories. Download Unroller now and never lose a memory again.">
+    <meta property="twitter:image" content="media/Frame 41.png">
+    
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="photo organizer, photo management, ios app, photo sorting, photo albums, mobile app">
+    
+    <link rel="dns-prefetch" href="//apps.apple.com">
+    <link rel="preconnect" href="https://apps.apple.com" crossorigin>
+    <link rel="preconnect" href="https://tools.applemediaservices.com" crossorigin>
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="Favicon/favicon.ico">
-    <style>
-        .screenshot-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
+    <link rel="preload" href="media/Frame 41.png" as="image">
 
-        .screenshot-gallery img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            flex: 1 1 calc(33% - 20px); /* Adjusts width for 3 items per row */
-            max-width: 300px; /* Optional max size to ensure screenshots are not too big */
-        }
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Unroller",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+      "url": "https://mmisongit.github.io/website/",
+      "image": "https://mmisongit.github.io/website/media/Frame%2041.png",
+      "downloadUrl": "https://apps.apple.com/app/id6739699580",
+      "publisher": {"@type": "Organization", "name": "Unroller"},
+      "description": "Automatically sort and organize your photos by albums, months, and categories."
+    }
+    </script>
 
-        @media (max-width: 768px) {
-            .screenshot-gallery img {
-                flex: 1 1 calc(50% - 20px); /* Two items per row on smaller screens */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .screenshot-gallery img {
-                flex: 1 1 100%; /* One item per row on very small screens */
-            }
-        }
-    </style>
+    <script>
+    // Set your Meta Pixel ID to enable tracking
+    window.__META_PIXEL_ID = '';
+    (function(f,b,e,v,n,t,s){
+      if(f.fbq) return; n=f.fbq=function(){ n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments) };
+      if(!f._fbq) f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0'; n.queue=[];
+      t=b.createElement(e); t.async=!0; t.src=v; s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);
+    })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    if (window.__META_PIXEL_ID) {
+      fbq('init', window.__META_PIXEL_ID);
+      fbq('track', 'PageView');
+    }
+    </script>
 </head>
 <body>
     <div>
@@ -47,25 +73,109 @@
             </nav>
         </header>
         <main class="main home">
-            <section>
-                <h1></h1>
-                <div class="screenshot-gallery">
-                    <img src="Media/PhotoSwiperView.jpg" alt="Screenshot 4 of Unroller App">
-                    <img src="Media/SortingView.jpg" alt="Screenshot 5 of Unroller App">
-                    <img src="Media/Simplicity.jpg" alt="Screenshot 6 of Unroller App">
-                    <img src="Media/OrganizedByAlbums.jpg" alt="Screenshot 1 of Unroller App">
-                    <img src="Media/OrganizedByMonths.jpg" alt="Screenshot 2 of Unroller App">
-                    <img src="Media/OrganizedByCategories.jpg" alt="Screenshot 3 of Unroller App">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1 class="hero-title">Transform Your Photo Chaos Into Perfect Organization</h1>
+                <p class="hero-subtitle">Unroller automatically sorts and organizes your photos by albums, months, and categories. Never lose a memory again.</p>
+                <div class="hero-cta">
+                    <a href="https://apps.apple.com/app/id6739699580" target="_blank" rel="noopener noreferrer nofollow" class="cta-button primary" data-cta="appstore" data-forward-params="true">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=512x175" alt="Download on the App Store" width="250" height="85">
+                    </a>
                 </div>
             </section>
-            <section>
-                <div class="appstore-download">
-                    <a href="https://apps.apple.com/app/id6739699580" target="_blank">
-                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=512x175" alt="Download on the App Store">
+
+            <section class="trust-bar" aria-label="Trust points">
+                <ul class="trust-list">
+                    <li>✅ No account required</li>
+                    <li>✅ No data collected</li>
+                    <li>✅ Freemium</li>
+                </ul>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <h2>Why Thousands Choose Unroller</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>🗂️ Smart Organization</h3>
+                        <p>Automatically categorizes photos by albums, dates, and subjects</p>
+                    </div>
+                    <div class="feature">
+                        <h3>📱 Simple Interface</h3>
+                        <p>Clean, intuitive design that makes photo management effortless</p>
+                    </div>
+                    <div class="feature">
+                        <h3>⚡ Lightning Fast</h3>
+                        <p>Browse thousands of photos instantly with our optimized viewer</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Screenshots Section -->
+            <section class="screenshots-section">
+                <h2>See Unroller In Action</h2>
+                <div class="screenshot-gallery">
+                    <img src="media/Frame 41.png" alt="Smart photo organization by albums" loading="lazy" width="300" height="auto">
+                    <img src="media/Frame 44.png" alt="Monthly photo timeline view" loading="lazy" width="300" height="auto">
+                    <img src="media/Frame 45.png" alt="Category-based photo sorting" loading="lazy" width="300" height="auto">
+                    <img src="media/Frame 46.png" alt="Lightning-fast photo browsing" loading="lazy" width="300" height="auto">
+                    <img src="media/Frame 48.png" alt="Clean, intuitive interface" loading="lazy" width="300" height="auto">
+                    <img src="media/Frame 40.png" alt="Powerful photo management tools" loading="lazy" width="300" height="auto">
+                </div>
+            </section>
+
+            <!-- Final CTA Section -->
+            <section class="final-cta">
+                <h2>Start Organizing Your Photos Today</h2>
+                <p>Join thousands of users who've already transformed their photo libraries</p>
+                <div class="cta-container">
+                    <a href="https://apps.apple.com/app/id6739699580" target="_blank" rel="noopener noreferrer nofollow" class="cta-button primary" data-cta="appstore" data-forward-params="true">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=512x175" alt="Download on the App Store" width="250" height="85" loading="lazy">
                     </a>
                 </div>
             </section>
         </main>
+        <div class="sticky-cta" role="region" aria-label="Quick download">
+            <div class="sticky-cta-inner">
+                <span>Get Unroller for iPhone</span>
+                <a href="https://apps.apple.com/app/id6739699580" target="_blank" rel="noopener noreferrer nofollow" class="cta-button primary" data-cta="appstore" data-forward-params="true">
+                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=512x175" alt="Download on the App Store" width="200" height="68" loading="lazy">
+                </a>
+            </div>
+        </div>
     </div>
+
+    <script>
+    (function() {
+      var search = window.location.search;
+      if (search && search.length > 1) {
+        document.querySelectorAll('a[data-forward-params="true"]').forEach(function(anchor) {
+          try {
+            var url = new URL(anchor.href);
+            var incoming = new URLSearchParams(search);
+            if (incoming.get('utm_campaign') && !url.searchParams.get('itsct')) {
+              url.searchParams.set('itsct', incoming.get('utm_campaign'));
+            }
+            if (incoming.get('utm_source') && !url.searchParams.get('itscg')) {
+              url.searchParams.set('itscg', incoming.get('utm_source'));
+            }
+            incoming.forEach(function(value, key) {
+              if (!url.searchParams.has(key)) url.searchParams.append(key, value);
+            });
+            anchor.href = url.toString();
+          } catch (e) {}
+        });
+      }
+
+      if (window.fbq) {
+        fbq('track', 'ViewContent');
+      }
+      document.querySelectorAll('a[data-cta="appstore"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function() {
+          if (window.fbq) fbq('track', 'Lead');
+        });
+      });
+    })();
+    </script>
 </body>
 </html>
