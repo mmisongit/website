@@ -19,14 +19,18 @@
         <main class="main home">
             <section>
                 <h2>Privacy Policy</h2>
-                <p><strong>Last updated: July 25, 2026</strong></p>
+                <p><strong>Last updated: September 2, 2026</strong></p>
                 <p>This Privacy Policy explains how the Unroller mobile application (the “Application”), provided by Mohamed Makled (the “Service Provider”), handles information.</p>
 
                 <h3>Privacy at a glance</h3>
-                <p>Your photos and videos are processed on your device and are not uploaded to the Service Provider, Amplitude, or RevenueCat. The Application does not display ads and does not track you across apps or websites owned by other companies.</p>
+                <p>Your photos and videos are processed on your device and are not uploaded to the Service Provider, Amplitude, RevenueCat, or Meta. The Application does not display ads. With your permission through Apple’s App Tracking Transparency framework, the Application measures the effectiveness of its own advertising across apps and websites owned by other companies. If you decline, this Meta advertising measurement is disabled.</p>
 
                 <h3>Photos and videos</h3>
                 <p>With your permission, the Application accesses your photo library so you can review, organize, and manage photos and videos. This processing happens locally on your device. The Service Provider does not receive or store photo or video contents, filenames, or Photos-library identifiers.</p>
+
+                <h3>Purchases and subscriptions</h3>
+                <p>The Application uses Apple’s StoreKit to offer and manage in-app purchases and RevenueCat to validate purchases, provide subscription entitlements, restore purchases, prevent fraud, and understand subscription performance.</p>
+                <p>For these purposes, RevenueCat processes purchase and subscription information, such as product identifiers, transaction and entitlement status, transaction metadata, and purchase history. RevenueCat also assigns a random, anonymous App User ID because the Application does not require an account. The Service Provider does not provide RevenueCat with your name, email address, photo library, payment-card details, or advertising identifier.</p>
 
                 <h3>Analytics information</h3>
                 <p>If anonymous analytics are enabled, the Application uses Amplitude to understand app performance and feature usage. This may include:</p>
@@ -38,18 +42,17 @@
                     <li>Paywall interactions and purchase-flow outcomes.</li>
                     <li>Technical information such as app version, operating-system version, device model, platform, and a pseudonymous analytics device identifier.</li>
                 </ul>
-                <p>The Application disables collection of IP address, IDFV, carrier, city, DMA, country, and region fields in its Amplitude configuration. Analytics information is used to understand feature adoption, diagnose product issues, and improve onboarding, cleanup, and purchase experiences. It is not used to track you across other companies’ apps or websites.</p>
+                <p>The Application disables collection of IP address, IDFV, carrier, city, DMA, country, and region fields in its Amplitude configuration. Analytics information is used to understand feature adoption, diagnose product issues, and improve onboarding, cleanup, and purchase experiences. It is not used for Meta advertising measurement or to track you across other companies’ apps or websites.</p>
                 <p>You can turn analytics collection on or off at any time in the Application’s Settings under Legal. Turning analytics off stops future Amplitude events from the Application and removes the Amplitude identifier supplied to RevenueCat for analytics attribution.</p>
-
-                <h3>Purchases and subscriptions</h3>
-                <p>The Application uses Apple’s StoreKit to offer and manage in-app purchases and RevenueCat to validate purchases, provide subscription entitlements, restore purchases, prevent fraud, and understand subscription performance.</p>
-                <p>For these purposes, RevenueCat processes purchase and subscription information, such as product identifiers, transaction and entitlement status, transaction metadata, and purchase history. RevenueCat also assigns a random, anonymous App User ID because the Application does not require an account. The Service Provider does not provide RevenueCat with your name, email address, photo library, payment-card details, or advertising identifier.</p>
 
                 <h3>Apple Search Ads attribution</h3>
                 <p>The Application uses Apple’s AdServices framework and RevenueCat to measure whether an installation resulted from an Apple Search Ads campaign. An Apple attribution token is sent to RevenueCat, which requests attribution information from Apple. This standard attribution does not use the advertising identifier (IDFA), does not require App Tracking Transparency permission, and is not used to track you across other companies’ apps or websites.</p>
 
+                <h3>Meta advertising measurement</h3>
+                <p>After you grant permission through Apple’s App Tracking Transparency framework, the Application uses Meta’s SDK to create an anonymous Meta identifier for advertising measurement. RevenueCat sends limited app lifecycle, trial, purchase, and subscription events to Meta so the Service Provider can measure which of its advertisements lead to installs and subscriptions. The Application does not use the IDFA, and no photos or videos are included in these events. If you decline or have not granted permission, the Application does not send the Meta identifier or these advertising-measurement events.</p>
+
                 <h3>Information the Application does not collect</h3>
-                <p>The Application does not require registration and does not collect your name, email address, contacts, precise location, browsing history, search history, or the contents of your photos and videos. It does not contain third-party advertising or cross-app tracking SDKs, and the Service Provider does not sell personal information.</p>
+                <p>The Application does not require registration and does not collect your name, email address, contacts, precise location, browsing history, search history, or the contents of your photos and videos. It does not display third-party advertisements. Meta’s SDK is used only for the opt-in advertising measurement described above.</p>
 
                 <h3>Service providers</h3>
                 <p>The Application relies on the following providers:</p>
@@ -57,14 +60,15 @@
                     <li><strong>Apple</strong> processes App Store purchases and provides Apple Search Ads attribution. Apple handles information under its own privacy policy.</li>
                     <li><strong>Amplitude</strong> processes pseudonymous product analytics and technical information on the Service Provider’s behalf. Amplitude handles information under its own privacy policy.</li>
                     <li><strong>RevenueCat</strong> processes purchase history, anonymous App User IDs, entitlement information, and Apple Search Ads attribution on the Service Provider’s behalf. RevenueCat handles information under its own privacy policy.</li>
+                    <li><strong>Meta</strong> processes the anonymous Meta identifier and limited app lifecycle, trial, purchase, and subscription events on the Service Provider’s behalf for opt-in advertising measurement. Meta handles information under its own privacy policy.</li>
                 </ul>
-                <p>You can review <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple’s Privacy Policy</a>, <a href="https://amplitude.com/privacy" target="_blank" rel="noopener noreferrer">Amplitude’s Privacy Policy</a>, and <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">RevenueCat’s Privacy Policy</a>.</p>
+                <p>You can review <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple’s Privacy Policy</a>, <a href="https://amplitude.com/privacy" target="_blank" rel="noopener noreferrer">Amplitude’s Privacy Policy</a>, <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">RevenueCat’s Privacy Policy</a>, and <a href="https://www.facebook.com/privacy/policies/" target="_blank" rel="noopener noreferrer">Meta’s Privacy Policy</a>.</p>
 
                 <h3>Data retention</h3>
                 <p>Analytics and purchase information may be retained by Apple, Amplitude, and RevenueCat for as long as needed to provide their services, meet legal obligations, prevent fraud, and maintain aggregate business records. These providers may process information in countries other than your own, subject to their contractual and legal safeguards. Because RevenueCat uses an anonymous App User ID, the Service Provider may need that identifier to locate a record associated with your installation.</p>
 
                 <h3>Your choices</h3>
-                <p>You can turn analytics collection on or off in the Application’s Settings under Legal. You can revoke the Application’s photo-library access at any time in iOS Settings and manage or cancel subscriptions in your Apple Account subscription settings. Uninstalling the Application stops future information collection by the Application, but does not automatically delete purchase records that Apple or RevenueCat must retain.</p>
+                <p>You can turn analytics collection on or off in the Application’s Settings under Legal. You can change your tracking choice at any time in iOS Settings under Privacy &amp; Security → Tracking. You can revoke the Application’s photo-library access at any time in iOS Settings. You can manage or cancel subscriptions in your Apple Account subscription settings. Uninstalling the Application stops future information collection by the Application, but does not automatically delete purchase records that Apple or RevenueCat must retain.</p>
                 <p>For questions or privacy requests, contact <a href="mailto:support@mmcapitals.org">support@mmcapitals.org</a>.</p>
 
                 <h3>Children</h3>
