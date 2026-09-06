@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
-  <title>Unroller</title>
-  <rect width="64" height="64" rx="18" fill="#1c211e"/>
-  <g fill="none" stroke-linecap="round">
-    <path d="M19 18v28" stroke="#fffdf9" stroke-width="6"/>
-    <path d="M32 14v36" stroke="#86b5ff" stroke-width="6"/>
-    <path d="M45 21v22" stroke="#ff9d85" stroke-width="6"/>
-  </g>
-</svg>
