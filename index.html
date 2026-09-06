@@ -72,7 +72,6 @@
                     <p class="hero-note">No account required · Photos stay on your device</p>
                 </div>
                 <div class="hero-visual" aria-label="Unroller app preview">
-                    <div class="visual-card visual-card-back" aria-hidden="true"><img src="media/Frame 44.png" alt=""></div>
                     <div class="visual-card visual-card-main"><img src="media/Frame 48.png" alt="Unroller album overview on iPhone"></div>
                     <div class="visual-card visual-card-front" aria-hidden="true"><img src="media/Frame 41.png" alt=""></div>
                 </div>
@@ -80,7 +79,7 @@
 
             <section class="signal-bar" aria-label="Unroller highlights">
                 <p><strong>Made for the backlog</strong><span>One photo at a time, at your pace.</span></p>
-                <p><strong>Private by design</strong><span>Everything stays local on your iPhone.</span></p>
+                <p><strong>Private by design</strong><span>Your photos and videos stay on your device.</span></p>
                 <p><strong>Free to start</strong><span>Try the flow before you decide.</span></p>
             </section>
 
@@ -126,7 +125,7 @@
                     </div>
                     <p>Designed to feel familiar from the first swipe, with just enough structure to keep you moving.</p>
                 </div>
-                <div class="screenshot-gallery">
+                <div class="screenshot-gallery" tabindex="0" role="region" aria-label="App screenshots — swipe or use arrow keys to browse">
                     <figure class="screenshot screenshot-tall"><img src="media/Frame 41.png" alt="Keep a photo with a swipe right" loading="lazy"><figcaption><span>Keep</span><small>Swipe right</small></figcaption></figure>
                     <figure class="screenshot screenshot-tall screenshot-offset"><img src="media/Frame 44.png" alt="Delete a photo with a swipe left" loading="lazy"><figcaption><span>Clear</span><small>Swipe left</small></figcaption></figure>
                     <figure class="screenshot screenshot-tall"><img src="media/Frame 45.png" alt="Review a photo collection in Unroller" loading="lazy"><figcaption><span>Review</span><small>Stay in control</small></figcaption></figure>
@@ -153,7 +152,7 @@
             <small>© 2026 Unroller. All rights reserved.</small>
         </footer>
 
-        <div class="sticky-cta" role="region" aria-label="Quick download">
+        <div class="sticky-cta" role="region" aria-label="Quick download" hidden>
             <span>Ready for a calmer camera roll?</span>
             <a class="button button-light" href="https://apps.apple.com/app/id6739699580" target="_blank" rel="noopener noreferrer nofollow" data-cta="appstore" data-forward-params="true">Get the app <span aria-hidden="true">↗</span></a>
         </div>
@@ -161,6 +160,23 @@
 
     <script>
     (function() {
+      var sticky = document.querySelector('.sticky-cta');
+      var heroAction = document.querySelector('.hero-actions');
+      var finalAction = document.querySelector('.final-cta');
+      if ('IntersectionObserver' in window && sticky && heroAction && finalAction) {
+        var pastHero = false;
+        var finalVisible = false;
+        var updateSticky = function() { sticky.hidden = !pastHero || finalVisible; };
+        new IntersectionObserver(function(entries) {
+          var entry = entries[0];
+          pastHero = !entry.isIntersecting && entry.boundingClientRect.bottom < 0;
+          updateSticky();
+        }).observe(heroAction);
+        new IntersectionObserver(function(entries) {
+          finalVisible = entries[0].isIntersecting;
+          updateSticky();
+        }).observe(finalAction);
+      }
       var search = window.location.search;
       if (search && search.length > 1) {
         document.querySelectorAll('a[data-forward-params="true"]').forEach(function(anchor) {
