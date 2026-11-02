@@ -80,13 +80,14 @@ h1 {
 .intro h1 span { white-space: nowrap; }
 .intro p { margin: 14px 0 0; color: var(--muted); font-size: clamp(19px, 2.4vw, 24px); letter-spacing: -.018em; }
 
-.apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.apps { display: grid; gap: 16px; }
 .app {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 32px;
+    display: grid;
+    grid-template-columns: 76px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 32px;
     border-radius: 28px;
     background: var(--card);
     box-shadow: var(--shadow);
@@ -106,11 +107,11 @@ h1 {
 h2 { margin: 0 0 6px; font-size: 28px; line-height: 1.14; letter-spacing: -.028em; font-weight: 700; }
 /* the title link covers the whole card; the text links below sit above it */
 h2 a::after { content: ""; position: absolute; inset: 0; border-radius: 28px; }
-.app-copy { flex: 1; }
+.app-copy { min-width: 0; }
 .app-copy p { margin: 0; color: var(--muted); }
 .app-copy .platform {
     display: inline-block;
-    margin-top: 14px;
+    margin-top: 12px;
     padding: 2px 10px;
     border-radius: 999px;
     background: var(--pill);
@@ -119,21 +120,21 @@ h2 a::after { content: ""; position: absolute; inset: 0; border-radius: 28px; }
     font-weight: 600;
     letter-spacing: 0;
 }
-.app-actions { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.app-actions { position: relative; display: flex; align-items: center; justify-content: flex-end; gap: 12px 24px; }
 .app-download {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: 66px;
     padding: 11px;
-    margin-inline: -11px;
+    margin-block: -11px;
 }
 .app .app-download img { width: auto; height: 44px; border-radius: 0; outline: none; box-shadow: none; object-fit: contain; }
 .app-links { position: relative; display: flex; flex-wrap: wrap; gap: 0 22px; font-size: 17px; }
 .app-links a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
 .app-links a { color: var(--link); }
 .app-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
-.app-links a:not(:has(span))::after { content: " \203A"; }
+.app-links a:not(:has(span))::after { content: "\203A"; margin-left: .3em; }
 
 footer {
     display: flex;
@@ -155,19 +156,24 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; }
     .app, nav a { transition: none; }
     .app:hover { transform: none; }
 }
+@media (max-width: 900px) and (min-width: 761px) {
+    .app { grid-template-columns: 76px minmax(0, 1fr); }
+    .app-actions { grid-column: 2; justify-content: flex-start; }
+    .app-download { margin-inline: -11px 2px; }
+}
 @media (max-width: 760px) {
     .wrap { width: calc(100% - 40px); }
     .site-header { width: 100%; padding-inline: 20px; }
     .intro { padding-block: 56px 40px; }
     .apps { grid-template-columns: 1fr; gap: 16px; }
-    .app { display: grid; grid-template-columns: 56px minmax(0, 1fr); align-items: start; gap: 4px 18px; padding: 22px; border-radius: 24px; }
+    .app { grid-template-columns: 56px minmax(0, 1fr); align-items: start; gap: 4px 18px; padding: 22px; border-radius: 24px; }
     .app:hover { transform: none; }
     .app img { width: 56px; height: 56px; grid-row: 1 / span 2; box-shadow: 0 4px 10px rgba(0, 0, 0, .14); }
     h2 { font-size: 24px; margin-bottom: 4px; }
     h2 a::after { border-radius: 24px; }
     .app-copy .platform { margin-top: 10px; }
-    .app-actions { grid-column: 1 / -1; margin-top: 12px; width: 100%; }
-    .app-download { align-self: flex-start; }
+    .app-actions { grid-column: 1 / -1; flex-direction: column; align-items: flex-start; gap: 0; margin-top: 12px; width: 100%; }
+    .app-download { margin-inline: -11px; }
     .app-links { gap: 0 20px; }
     footer { flex-direction: column; margin-top: 48px; }
 }
