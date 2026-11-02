@@ -64,7 +64,8 @@ a:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; border-ra
 }
 .brand { font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
 nav { display: flex; gap: 28px; font-size: 13px; }
-nav a { color: var(--muted); transition: color .2s ease; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; color: var(--muted); transition: color .2s ease; }
+.site-header .brand { display: inline-flex; align-items: center; min-height: 44px; }
 nav a:hover { color: var(--ink); }
 
 .intro { padding-block: 96px 64px; text-align: center; }
@@ -74,7 +75,9 @@ h1 {
     line-height: 1.07;
     font-weight: 700;
     letter-spacing: -.035em;
+    text-wrap: balance;
 }
+.intro h1 span { white-space: nowrap; }
 .intro p { margin: 14px 0 0; color: var(--muted); font-size: clamp(19px, 2.4vw, 24px); letter-spacing: -.018em; }
 
 .apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
@@ -116,7 +119,18 @@ h2 a::after { content: ""; position: absolute; inset: 0; border-radius: 28px; }
     font-weight: 600;
     letter-spacing: 0;
 }
-.app-links { position: relative; display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 17px; }
+.app-actions { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.app-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 66px;
+    padding: 11px;
+    margin-inline: -11px;
+}
+.app .app-download img { width: auto; height: 44px; border-radius: 0; outline: none; box-shadow: none; object-fit: contain; }
+.app-links { position: relative; display: flex; flex-wrap: wrap; gap: 0 22px; font-size: 17px; }
+.app-links a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
 .app-links a { color: var(--link); }
 .app-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .app-links a:not(:has(span))::after { content: " \203A"; }
@@ -134,6 +148,7 @@ footer {
 }
 footer p { margin: 0; }
 footer a:hover { color: var(--ink); }
+footer a { display: inline-flex; align-items: center; min-height: 44px; }
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
@@ -151,6 +166,8 @@ footer a:hover { color: var(--ink); }
     h2 { font-size: 24px; margin-bottom: 4px; }
     h2 a::after { border-radius: 24px; }
     .app-copy .platform { margin-top: 10px; }
-    .app-links { grid-column: 2; margin-top: 8px; gap: 8px 20px; }
+    .app-actions { grid-column: 1 / -1; margin-top: 12px; width: 100%; }
+    .app-download { align-self: flex-start; }
+    .app-links { gap: 0 20px; }
     footer { flex-direction: column; margin-top: 48px; }
 }

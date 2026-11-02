@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,50 +9,75 @@
     <link rel="icon" type="image/png" sizes="256x256" href="gramtrail-icon.png">
     <link rel="apple-touch-icon" href="gramtrail-icon.png">
     <link rel="canonical" href="https://mmcapitals.com/gramtrail/">
-</head>
+
+<link rel="stylesheet" href="../app-structure.css"></head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
     <header>
         <div class="wrap">
             <a class="brand" href="./" aria-label="Gramtrail home"><img src="gramtrail-icon.png" alt="" width="30" height="30"><span>Gramtrail</span></a>
-            <nav>
+            <nav aria-label="Main navigation">
+                <a href="../">All apps</a>
                 <a href="./" aria-current="page">Support</a>
                 <a href="privacy.html">Privacy</a>
-                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms</a>
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a>
+
             </nav>
         </div>
     </header>
-    <main>
-        <div class="wrap">
-            <h1>Gramtrail Support</h1>
-            <p class="updated">Gramtrail: Protein Tracker for iPhone.</p>
-            <div class="card">
-                <p><strong>Need help?</strong> Email <a href="mailto:support@mmcapitals.com">support@mmcapitals.com</a>. Include your iOS version, what happened and, for food lookups, the barcode. We usually reply within two business days.</p>
-            </div>
+<main class="wrap support-page" id="main-content">
+<div class="page-intro">
+        <h1>Gramtrail support</h1>
+        <p>Scan a barcode or nutrition label and track your protein on iPhone.</p>
+        <a class="download-link" href="https://apps.apple.com/app/id6825008993" aria-label="Download Gramtrail on the App Store"><img src="../assets/app-store-badge.svg" alt="Download on the App Store" width="132" height="44"></a>
+    </div>
+<nav class="support-toc" aria-label="On this page">
+        <a href="#getting-started">Getting started</a>
+        <a href="#purchases">Purchases</a>
+        <a href="#data-privacy">Data &amp; privacy</a>
+        <a href="#help">Help</a>
+    </nav>
+<section class="support-section" id="getting-started" aria-labelledby="getting-started-title">
+<h2 id="getting-started-title">Getting started</h2>
+<ol><li>Scan a barcode or nutrition label, or choose a food.</li><li>Check the protein value against the package.</li><li>Enter the amount you ate and save it to your log.</li></ol>
+</section>
+<section class="support-section" id="purchases" aria-labelledby="purchases-title">
+<h2 id="purchases-title">Purchases</h2>
+<h3>Restore a purchase</h3>
+<p>Open <strong>Settings → Pro → Restore purchases</strong>, or tap <strong>Restore</strong> on the Pro screen. Use the same Apple Account you bought with. Gramtrail has no account, so purchases are always tied to your Apple Account.</p>
+<h3>Cancel or change a subscription</h3>
+<p>Subscriptions are managed by Apple. Go to iOS Settings → your name → Subscriptions, choose Gramtrail and cancel or change your plan. Cancel at least 24 hours before the renewal date to avoid the next charge. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>.</p>
+</section>
+<section class="support-section" id="data-privacy" aria-labelledby="data-privacy-title">
+<h2 id="data-privacy-title">Data &amp; privacy</h2>
+<h3>Your food log</h3>
+<p>Your log is stored on your iPhone and needs no account. It is included in your device backup. Deleting the app deletes the log stored by the app.</p>
+<h3>Apple Health</h3>
+<p>With Pro, you can export your protein log to Apple Health in <strong>Settings → Apple Health</strong>. Gramtrail only writes protein and never reads your Health data. Edits and deletions in Gramtrail update the exported entries. You can change access at any time in iOS Settings → Health → Data Access &amp; Devices → Gramtrail.</p>
+<h3>Food data</h3>
+<p>Product data comes from <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener noreferrer">Open Food Facts</a> under the Open Database License (ODbL). Basic foods and the offline US barcode catalog come from <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer">USDA FoodData Central</a>.</p><p><a href="privacy.html">Privacy Policy</a> &middot; <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of Use (Apple standard EULA)</a></p>
+</section>
+<section class="support-section" id="help" aria-labelledby="help-title">
+<h2 id="help-title">Help &amp; troubleshooting</h2>
+<h3>A barcode is not found or a value looks wrong</h3>
+<p>Gramtrail looks up barcodes in Open Food Facts and, for US products, in a bundled USDA FoodData Central catalog. If a product is missing or its protein value differs from the pack, scan the nutrition label instead or type the value from the pack. Your correction is saved on your iPhone and used the next time you scan that barcode. Always check the protein per 100 g against the package.</p>
+<div class="contact-panel card"><h3>Contact support</h3>
+<p><strong>Need help?</strong> Email <a href="mailto:support@mmcapitals.com">support@mmcapitals.com</a>. Include your iOS version, what happened and, for food lookups, the barcode. We usually reply within two business days.</p>
+</div>
+</section>
 
-            <h2>A barcode is not found or a value looks wrong</h2>
-            <p>Gramtrail looks up barcodes in Open Food Facts and, for US products, in a bundled USDA FoodData Central catalog. If a product is missing or its protein value differs from the pack, scan the nutrition label instead or type the value from the pack. Your correction is saved on your iPhone and used the next time you scan that barcode. Always check the protein per 100 g against the package.</p>
-
-            <h2>Restore a purchase</h2>
-            <p>Open <strong>Settings → Pro → Restore purchases</strong>, or tap <strong>Restore</strong> on the Pro screen. Use the same Apple Account you bought with. Gramtrail has no account, so purchases are always tied to your Apple Account.</p>
-
-            <h2>Cancel or change a subscription</h2>
-            <p>Subscriptions are managed by Apple. Go to iOS Settings → your name → Subscriptions, choose Gramtrail and cancel or change your plan. Cancel at least 24 hours before the renewal date to avoid the next charge. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>.</p>
-
-            <h2>Your food log</h2>
-            <p>Your log is stored on your iPhone and needs no account. It is included in your device backup. Deleting the app deletes the log stored by the app.</p>
-
-            <h2>Apple Health</h2>
-            <p>With Pro, you can export your protein log to Apple Health in <strong>Settings → Apple Health</strong>. Gramtrail only writes protein and never reads your Health data. Edits and deletions in Gramtrail update the exported entries. You can change access at any time in iOS Settings → Health → Data Access &amp; Devices → Gramtrail.</p>
-
-            <h2>Food data</h2>
-            <p>Product data comes from <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener noreferrer">Open Food Facts</a> under the Open Database License (ODbL). Basic foods and the offline US barcode catalog come from <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer">USDA FoodData Central</a>.</p>
-
-            <h2>Legal</h2>
-            <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of Use (Apple standard EULA)</a></p>
+</main>
+<footer>
+        <div class="wrap app-footer">
+            <nav aria-label="Footer navigation">
+                <a href="../">All apps</a>
+                <a href="./">Support</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a>
+            </nav>
+            <a class="footer-contact" href="mailto:support@mmcapitals.com?subject=Gramtrail%20support">support@mmcapitals.com</a>
+            <p>© 2026 Mohamed Makled</p>
         </div>
-    </main>
-    <footer>
-        <div class="wrap">&copy; 2026 Mohamed Makled &middot; <a href="mailto:support@mmcapitals.com">support@mmcapitals.com</a></div>
     </footer>
 </body>
 </html>
