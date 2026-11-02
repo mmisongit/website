@@ -15,6 +15,7 @@
     --muted: #a0a7b3;
     --line: #262a31;
     --accent: #6d97ff;
+    --icon-edge: rgba(255, 255, 255, .16);
   }
 }
 * { box-sizing: border-box; }
@@ -31,7 +32,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-
 header { border-bottom: 1px solid var(--line); background: var(--surface); }
 header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; padding-bottom: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 700; font-size: 1.1rem; letter-spacing: -0.02em; }
-.brand img { width: 30px; height: 30px; border-radius: 7px; }
+.brand img { width: 30px; height: 30px; border-radius: 22.5%; outline: 1px solid var(--icon-edge, rgba(0, 0, 0, .12)); outline-offset: -1px; object-fit: cover; }
 nav { display: flex; gap: 18px; font-size: 0.92rem; }
 nav a { color: var(--muted); text-decoration: none; }
 nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
