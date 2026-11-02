@@ -5,7 +5,7 @@ its own stylesheet, colors, typography and visual details.
 
 ## Support pages
 
-Use this order in each app's `index.html`:
+Use this order in each app's `index.html` (and in Unroller's root `support.html`):
 
 1. App name, short description and App Store badge when publicly available.
 2. On-page navigation: Getting started, Purchases, Data & privacy, Help.
@@ -37,3 +37,9 @@ Follow Apple's badge guidance at
 https://developer.apple.com/app-store/marketing/guidelines/.
 The badge is displayed at 44px high, with 11px clear space on every side.
 Use the app-specific App Store link and accessible label on the enclosing anchor.
+
+Unroller uses the same repository on unroller.app. Keep `support.html` available
+at the root because it is the support URL already used in App Store Connect. Its
+existing root privacy and terms pages use the same navigation and keep their
+legal content. Unroller retains the palette and typography from `styles.css`,
+with page layout in `unroller.css`.

@@ -8,17 +8,24 @@
     <link rel="icon" type="image/png" sizes="256x256" href="Favicon/unroller-app-icon.png?v=20260906">
     <link rel="shortcut icon" type="image/x-icon" href="Favicon/favicon.ico?v=20260906">
     <link rel="canonical" href="https://unroller.app/terms.html">
+    <link rel="stylesheet" href="unroller.css">
+    <link rel="stylesheet" href="app-structure.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div>
-        <header class="site-header">
-            <a class="brand" href="index.html" aria-label="Unroller home"><img class="brand-icon" src="Favicon/unroller-app-icon.png" alt="" width="30" height="30"><span>Unroller</span></a>
-            <nav>
-                <a href="terms.html">Terms</a>
+        <header>
+        <div class="wrap">
+            <a class="brand" href="support.html" aria-label="Unroller home"><img src="Favicon/unroller-app-icon.png" alt="" width="30" height="30"><span>Unroller</span></a>
+            <nav aria-label="Main navigation">
+                <a href="https://mmcapitals.com/">All apps</a>
+                <a href="support.html">Support</a>
                 <a href="privacy.html">Privacy</a>
+                <a href="terms.html" aria-current="page">Terms</a>
             </nav>
-        </header>
-        <main class="legal-page">
+        </div>
+    </header>
+        <main class="legal-page" id="main-content">
             <section>
                 <h2>Terms &amp; Conditions</h2>
                 <p>These terms and conditions apply to the Unroller app (hereby referred to as "Application") for mobile devices that was created by Mohamed Makled (hereby referred to as "Service Provider") as a Freemium service.</p>
@@ -50,10 +57,18 @@
                 <p>If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at <a href="mailto:support@unroller.app">support@unroller.app</a>.</p>
             </section>
         </main>
-        <footer class="site-footer">
-            <p>&copy; 2026 Unroller. All Rights Reserved.<br>
-            Contact us: <a href="mailto:support@unroller.app">support@unroller.app</a></p>
-        </footer>
+        <footer>
+        <div class="wrap app-footer">
+            <nav aria-label="Footer navigation">
+                <a href="https://mmcapitals.com/">All apps</a>
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+            <a class="footer-contact" href="mailto:support@mmcapitals.com?subject=Unroller%20support">support@mmcapitals.com</a>
+            <p>© 2026 Mohamed Makled</p>
+        </div>
+    </footer>
     </div>
 </body>
 </html>
