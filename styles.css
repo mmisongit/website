@@ -53,10 +53,13 @@ img { display: block; max-width: 100%; }
 }
 
 .brand-icon {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     flex: 0 0 auto;
-    border-radius: 8px;
+    border-radius: 22.5%;
+    outline: 1px solid rgba(0, 0, 0, .12);
+    outline-offset: -1px;
+    object-fit: cover;
 }
 
 .site-nav { display: flex; align-items: center; gap: 28px; color: #59625a; font-size: 0.9rem; }
