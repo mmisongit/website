@@ -29,7 +29,12 @@ remains independent of the support-page structure.
 ## Download badges
 
 Only show a download badge after verifying that the app's public App Store page
-is available. The portfolio's `/` and `/apps/` entry points must remain in sync.
+is available. Badges belong on the app's own support page; the portfolio list
+shows none, so every row looks the same whether or not the app is released.
+The portfolio's `/` and `/apps/` entry points must remain in sync.
+
+The portfolio uses Bricolage Grotesque, self-hosted from `assets/fonts/` (OFL,
+license alongside) so the page makes no third-party font requests.
 
 Use `assets/app-store-badge.svg`, downloaded without modification from
 https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg.
