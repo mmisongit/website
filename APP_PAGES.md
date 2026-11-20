@@ -48,3 +48,14 @@ at the root because it is the support URL already used in App Store Connect. Its
 existing root privacy and terms pages use the same navigation and keep their
 legal content. Unroller retains the palette and typography from `styles.css`,
 with page layout in `unroller.css`.
+
+## Unroller landing page (unroller.app)
+
+unroller.app is the Cloudflare Pages project `unroller`; mmcapitals.com is GitHub
+Pages. `_redirects` (read only by Cloudflare) serves `/`, `/de/`, `robots.txt` and
+`sitemap.xml` on unroller.app from `unroller/`. Edit the copy in
+`unroller/content.py`, then run `python3 unroller/build.py` and commit the generated
+files. The build refreshes the App Store rating and fails on missing or extra
+h1s, long titles or descriptions, invalid JSON-LD, FAQ schema that differs from
+the visible FAQ, and missing local files. Every pushed branch gets a preview at
+`<branch>.unroller.pages.dev`.
