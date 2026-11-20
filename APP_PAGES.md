@@ -59,3 +59,7 @@ files. The build refreshes the App Store rating and fails on missing or extra
 h1s, long titles or descriptions, invalid JSON-LD, FAQ schema that differs from
 the visible FAQ, and missing local files. Every pushed branch gets a preview at
 `<branch>.unroller.pages.dev`.
+
+Guides live in `unroller/guides.py` and are served at `unroller.app/guides/<slug>/`.
+Add a guide as a new entry there, link it from related guides or the FAQ, and run
+the build; the sitemap and the guides index update automatically.

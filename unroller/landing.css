@@ -128,3 +128,37 @@ h3 { font-size: 1.1rem; margin: 0 0 6px; }
     .shot-front { left: calc(50% - 158px); }
     .shot-back { right: calc(50% - 158px); }
 }
+
+/* Guides */
+.guide-header { background: linear-gradient(180deg, var(--blue-dark), var(--blue)); color: #fff; }
+.article { max-width: 760px; padding-block: 28px 72px; }
+.article h1 { font-size: clamp(2rem, 4.6vw, 2.9rem); margin: 8px 0 12px; }
+.article h2 { font-size: clamp(1.4rem, 2.8vw, 1.75rem); margin: 44px 0 12px; }
+.article p, .article li { color: var(--ink); }
+.article section > p, .howto li { line-height: 1.7; }
+.breadcrumb { font-size: 0.9rem; color: var(--muted); }
+.breadcrumb a { color: var(--muted); }
+.byline { font-size: 0.9rem; color: var(--muted); margin: 0 0 24px; }
+.article-lead { font-size: 1.15rem; line-height: 1.65; }
+.howto { padding-left: 1.4rem; display: grid; gap: 8px; }
+.howto li::marker { font-weight: 700; color: var(--blue); }
+.article figure { margin: 28px auto; width: min(300px, 80%); }
+.article figure .shot { border-radius: var(--radius); box-shadow: 0 16px 40px rgba(7, 55, 129, 0.18); }
+.article figcaption { font-size: 0.9rem; color: var(--muted); text-align: center; margin-top: 10px; }
+.callout { display: flex; gap: 18px; align-items: flex-start; margin: 32px 0; padding: 22px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(7, 55, 129, 0.08); }
+.callout-icon { width: 64px; height: 64px; border-radius: 22.5%; flex: 0 0 auto; }
+.callout p { margin: 0 0 14px; color: var(--muted); }
+.callout strong { color: var(--ink); }
+.callout .store-badge img { height: 44px; }
+.article .faq { max-width: none; }
+.related { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); }
+.related h2 { margin-top: 0; font-size: 1.2rem; }
+.related ul { padding-left: 1.2rem; display: grid; gap: 8px; }
+.guide-cards { list-style: none; padding: 0; margin: 28px 0; display: grid; gap: 16px; }
+.guide-cards a { display: block; padding: 22px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
+.guide-cards a:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(7, 55, 129, 0.12); }
+.guide-cards h2 { font-size: 1.2rem; margin: 0 0 6px; }
+.guide-cards p { margin: 0; color: var(--muted); }
+@media (max-width: 560px) {
+    .callout { flex-direction: column; }
+}

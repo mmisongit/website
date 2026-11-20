@@ -1,7 +1,10 @@
 # Cloudflare Pages (unroller.app) only. GitHub Pages (mmcapitals.com) ignores this file.
-# unroller.app gets its own landing page, sitemap and robots.txt from /unroller/.
+# unroller.app gets its own landing page, guides, sitemap and robots.txt from /unroller/.
 /              /unroller/              200
 /de            /unroller/de/           200
 /de/           /unroller/de/           200
+/guides        /unroller/guides/       200
+/guides/       /unroller/guides/       200
+/guides/*      /unroller/guides/:splat 200
 /robots.txt    /unroller/robots.txt    200
 /sitemap.xml   /unroller/sitemap.xml   200
