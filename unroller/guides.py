@@ -175,11 +175,14 @@ GUIDES = [
                     "Open Screenshots and tap Select, then Select All.",
                     "Deselect the few you want to keep and tap the trash button.",
                 ],
+                "after": [
+                    "Screen recordings and automatic cleanup are covered in [how to delete all screenshots on iPhone](/guides/delete-all-screenshots-iphone/).",
+                ],
             },
             {
                 "h2": "2. Merge duplicates",
                 "paras": [
-                    "Photos finds exact copies for you. Open Collections > Utilities > Duplicates and tap Merge. Photos keeps the best version and moves the extra copies to Recently Deleted. The Duplicates album only appears when Photos has found some.",
+                    "Photos finds exact copies for you. Open Collections > Utilities > Duplicates and tap Merge. Photos keeps the best version and moves the extra copies to Recently Deleted. The Duplicates album only appears when Photos has found some. More detail in [how to delete duplicate photos on iPhone](/guides/delete-duplicate-photos-iphone/).",
                 ],
             },
             {
@@ -222,5 +225,136 @@ GUIDES = [
              "Videos, because one long 4K video can be as big as hundreds of photos. After that, duplicates and screenshots, then everything else month by month."),
         ],
         "related": ["iphone-storage-full-after-deleting-photos", "sort-iphone-photos-by-size"],
+    },
+    {
+        "slug": "delete-duplicate-photos-iphone",
+        "title": "How to Find and Delete Duplicate Photos on iPhone",
+        "description": "Photos finds exact duplicates and merges them in a few taps. Here is how, why the Duplicates album can be missing, and how to handle similar shots.",
+        "h1": "How to find and delete duplicate photos on iPhone",
+        "card": "Merge exact copies with the built-in Duplicates album, and deal with the near-identical shots it misses.",
+        "published": "2026-11-20",
+        "intro": [
+            "On iOS 16 and later, the Photos app finds duplicate photos for you. Open Collections, scroll to Utilities and tap Duplicates, then tap Merge on each pair or select them all and merge them at once. Photos keeps one copy with the best quality and moves the rest to Recently Deleted. It only catches photos that are identical or almost identical, so similar shots of the same moment need a second pass.",
+        ],
+        "sections": [
+            {
+                "h2": "Merge duplicates in the Photos app",
+                "steps": [
+                    "Open Photos and tap Collections (Albums on older iOS versions).",
+                    "Scroll to Utilities and tap Duplicates.",
+                    "Tap Merge next to a set, then confirm with Merge Exact Copies or Merge Items.",
+                    "To merge everything, tap Select, then Select All, then Merge at the bottom.",
+                    "Open Recently Deleted and delete the extra copies to get the space back.",
+                ],
+                "after": [
+                    "Merging is not the same as deleting one copy by hand. Photos combines the information from both items, like album membership and keywords, into the copy it keeps. With iCloud Photos turned on, the merge applies on all your devices.",
+                ],
+            },
+            {
+                "h2": "Why the Duplicates album is missing",
+                "paras": [
+                    "The Duplicates album only appears once Photos has indexed your library and found at least one duplicate. Indexing runs in the background while the iPhone is locked and connected to power, so after an update or a large import it can take a night or two. While it's still running, a status message shows at the bottom of your library.",
+                    "If the album never appears, Photos hasn't found anything that counts as a duplicate. Its rules are strict on purpose: it looks for the same image, sometimes in a different resolution or format, not for two photos that just look alike.",
+                ],
+            },
+            {
+                "h2": "Clean up similar photos the built-in tool misses",
+                "paras": [
+                    "Most of the clutter isn't exact copies. It's the eight shots you took to get one good group photo, or the same sunset from slightly different angles. Photos treats those as different pictures and leaves them alone.",
+                    "Unroller has a duplicate finder that also groups similar photos, so you see the shots of one moment side by side and can keep only the best one.",
+                ],
+                "steps": [
+                    "Open Unroller and tap Tools.",
+                    "Open the Duplicate Detector and tap Review Duplicates.",
+                    "Go through the groups and choose which photos to delete.",
+                    "Confirm the deletion. The photos go to Recently Deleted for 30 days.",
+                ],
+                "figure": ("en-tools.jpg", "Unroller tools screen with the duplicate detector and album cleaner", "The duplicate detector in Unroller shows how many duplicates it found and how much space they use."),
+                "cta": True,
+            },
+            {
+                "h2": "Bursts and Live Photos",
+                "paras": [
+                    "Burst photos sit in one stack that looks like a single picture. Open Collections > Media Types > Bursts, open a burst, tap Select, pick the frames you want and tap Done, then choose Keep Only Favorites. Live Photos aren't duplicates, but each one stores a short video next to the photo, so they take roughly twice the space of a normal photo.",
+                    "When you're done, empty Recently Deleted. If the storage number doesn't change, read [why iPhone storage stays full after deleting photos](/guides/iphone-storage-full-after-deleting-photos/).",
+                ],
+            },
+        ],
+        "faq": [
+            ("Does merging duplicates on iPhone lose any photos?",
+             "No. Photos keeps the highest-quality version and combines the details of both copies into it. The extra copies go to Recently Deleted, where you can restore them for 30 days. As with any large cleanup, keep a backup before merging hundreds of items."),
+            ("Why doesn't my iPhone find all my duplicates?",
+             "The built-in tool only flags identical or nearly identical images. Similar photos taken a second apart count as different pictures. For those you need to compare them yourself or use an app that groups similar shots."),
+        ],
+        "related": ["clean-up-camera-roll-fast", "delete-all-screenshots-iphone"],
+    },
+    {
+        "slug": "delete-all-screenshots-iphone",
+        "title": "How to Delete All Screenshots on iPhone at Once",
+        "description": "Open the Screenshots album, Select All and delete. Plus how to keep the few you need, clear screen recordings and stop screenshots piling up again.",
+        "h1": "How to delete all screenshots on iPhone at once",
+        "card": "Clear the Screenshots album in a few taps, keep the ones you still need and stop new ones from piling up.",
+        "published": "2026-11-20",
+        "intro": [
+            "To delete all screenshots on iPhone at once, open Photos, go to Collections > Media Types > Screenshots, tap Select, then Select All, and tap the trash button. Then empty Recently Deleted, because deleted screenshots keep using storage there for 30 days.",
+        ],
+        "sections": [
+            {
+                "h2": "Delete every screenshot in a few taps",
+                "steps": [
+                    "Open the Photos app and tap Collections (Albums on older iOS versions).",
+                    "Scroll to Media Types and tap Screenshots.",
+                    "Tap Select, then Select All.",
+                    "Tap the trash button and confirm.",
+                    "Open Collections > Utilities > Recently Deleted and delete them there too.",
+                ],
+                "after": [
+                    "If you have thousands of screenshots, Photos can take a moment to select them all. Wait until the counter at the top stops before you tap the trash button.",
+                ],
+            },
+            {
+                "h2": "Keep the screenshots you still need",
+                "paras": [
+                    "Boarding passes, receipts and confirmation codes are easy to delete by accident. The quick way: before you select everything, mark the few you want to keep as favorites. Then Select All, scroll through and deselect the ones with a heart. Or simply deselect them one by one.",
+                    "If you want to decide about each screenshot, swiping is faster than tapping through a grid. In Unroller, open Categories and pick Screenshots, then swipe left to delete and right to keep.",
+                ],
+                "figure": ("en-delete.jpg", "Unroller with a photo swiped left to delete", "Swipe left to mark a screenshot for deletion, right to keep it."),
+                "cta": True,
+            },
+            {
+                "h2": "Don't forget screen recordings",
+                "paras": [
+                    "Screen recordings live in their own album under Media Types, and they are much larger than screenshots. A few minutes of recording can take hundreds of megabytes. Clear them the same way: open Screen Recordings, tap Select, then Select All, and delete.",
+                ],
+            },
+            {
+                "h2": "Find screenshots that aren't in the Screenshots album",
+                "paras": [
+                    "The Screenshots album only holds screenshots you took on this iPhone. Screenshots that friends sent you in WhatsApp or Messages and that you saved count as normal photos, so they hide in your library between everything else. The same goes for screenshots from an old phone that came over through a computer import.",
+                    "Searching helps here. Type a word you remember from the screenshot into the Photos search, like a shop name or \"receipt\", and Photos finds pictures that contain that text. Going through your library month by month catches the rest, because screenshots are easy to spot when you see one picture at a time.",
+                ],
+            },
+            {
+                "h2": "Delete old screenshots automatically",
+                "paras": [
+                    "The Shortcuts app can clean up for you. Create a shortcut with a Find Photos action filtered to Is a Screenshot and a creation date older than 30 days, followed by a Delete Photos action. Run it from a personal automation once a week.",
+                    "Two limits: iOS asks you to confirm before Shortcuts deletes photos, so it isn't fully hands-free. And screenshots that someone sent you and you saved don't count as screenshots, so the filter skips them.",
+                ],
+            },
+            {
+                "h2": "Stop screenshots from piling up",
+                "paras": [
+                    "Delete a screenshot right after you've used it: tap the preview after taking it, tap Done (a check mark on newer iOS versions) and choose Delete Screenshot. You can also choose Save to Files for screenshots you want to keep but not see in your photo library.",
+                    "For the rest of your camera roll, see [how to clean up your camera roll fast](/guides/clean-up-camera-roll-fast/).",
+                ],
+            },
+        ],
+        "faq": [
+            ("Does deleting screenshots free up space on iPhone?",
+             "Yes, once you also delete them from Recently Deleted. A single screenshot is small, but thousands of them add up, and screen recordings take much more space."),
+            ("Can I stop my iPhone from saving screenshots to Photos?",
+             "There is no setting that keeps screenshots out of Photos entirely. After taking one, you can tap the preview, tap Done and choose Save to Files or Delete Screenshot instead of saving it to your library."),
+        ],
+        "related": ["clean-up-camera-roll-fast", "delete-duplicate-photos-iphone"],
     },
 ]
