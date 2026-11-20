@@ -45,6 +45,8 @@ def store_ratings():
 
 
 def store_url(campaign):
+    if len(campaign) > 40:
+        raise ValueError(f"campaign token '{campaign}' is longer than App Store Connect's 40 characters")
     if PROVIDER_TOKEN:
         return f"https://apps.apple.com/app/apple-store/id{APP_ID}?pt={PROVIDER_TOKEN}&ct={campaign}&mt=8"
     return f"https://apps.apple.com/app/id{APP_ID}"
@@ -276,7 +278,7 @@ def callout(campaign):
 def render_guide(guide):
     path = guide_url(guide["slug"])
     url = SITE + path
-    campaign = "web-guide-" + guide["slug"][:40]
+    campaign = ("guide-" + guide["slug"])[:40]
     body = []
     for section in guide["sections"]:
         parts = [f'            <section>\n                <h2>{e(section["h2"])}</h2>']

@@ -2,8 +2,9 @@
 
 APP_ID = "6739699580"
 SITE = "https://unroller.app"
-# Add the provider token from App Store Connect (App Analytics > Campaigns) to attribute web installs.
-PROVIDER_TOKEN = ""
+# Provider token from App Store Connect (Analytics > Campaigns). With it, every App Store link carries a
+# campaign token (ct, max 40 characters), so installs show up per page under Analytics > Campaigns.
+PROVIDER_TOKEN = "127515296"
 
 PAGES = {
     "en": {
