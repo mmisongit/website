@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TabDock beta</title><link rel="stylesheet" href="tabdock.css"><link rel="icon" href="tabdock-icon.png"><link rel="apple-touch-icon" href="tabdock-icon.png">
+<meta name="description" content="TabDock puts windows from different Mac apps into one tab group with a browser-style tab bar. Download the public beta, getting started, privacy and how to report problems.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://mmcapitals.com/tabdock/">
+<link rel="stylesheet" href="../app-structure.css"></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+    <header>
+        <div class="wrap">
+            <a class="brand" href="./" aria-label="TabDock home"><img src="tabdock-icon.png" alt="" width="30" height="30"><span>TabDock</span></a>
+            <nav aria-label="Main navigation">
+                <a href="../">All apps</a>
+                <a href="./" aria-current="page">Beta &amp; support</a>
+            </nav>
+        </div>
+    </header>
+<main class="wrap support-page" id="main-content">
+<div class="page-intro">
+        <h1>TabDock <span class="beta-badge">BETA</span></h1>
+        <p>Browser-style tabs for any Mac window. Group windows from different apps under one tab bar, switch with a click or a shortcut, and drag windows in and out.</p>
+        <div class="download">
+            <a class="download-button" href="TabDock-0.1.0-beta.1.dmg" download>Download TabDock 0.1.0 beta 1</a>
+            <span class="download-meta">macOS 14 or later · 1 MB · free during the beta</span>
+        </div>
+    </div>
+<video class="demo" src="tabdock-demo.mp4" poster="tabdock-demo-poster.jpg" controls muted playsinline preload="none" aria-label="TabDock demo: creating a group, adding windows, switching tabs, dragging a window in, reordering, reopening a closed tab and moving the group"></video>
+<nav class="support-toc" aria-label="On this page">
+        <a href="#getting-started">Getting started</a>
+        <a href="#beta">About the beta</a>
+        <a href="#data-privacy">Data &amp; privacy</a>
+        <a href="#help">Help</a>
+    </nav>
+<section class="support-section" id="getting-started" aria-labelledby="getting-started-title">
+<h2 id="getting-started-title">Getting started</h2>
+<ol><li>Open the downloaded file and drag TabDock to Applications, then open it. TabDock lives in the menu bar and has no Dock icon.</li><li>Allow TabDock under System Settings → Privacy &amp; Security → Accessibility. TabDock asks for this on first launch; it needs it to move and switch the windows of other apps.</li><li>Click the TabDock icon in the menu bar, choose New Group … and pick a window. The tab bar appears on top of it.</li><li>Add windows with the + in the tab bar, or drag any window by its title bar onto the bar.</li></ol>
+<h3>Everyday use</h3>
+<ul><li>Click a tab to switch. <kbd>⌃⌥1</kbd>–<kbd>⌃⌥9</kbd> jump to a tab, <kbd>⌃⌥←</kbd> / <kbd>⌃⌥→</kbd> go to the previous or next tab (Settings lets you change the prefix).</li><li>Drag a tab to reorder it, or out of the bar to remove it. The × on a tab removes and minimizes its window.</li><li><kbd>⌃⌥T</kbd> brings back the last removed tab.</li><li>Drag empty space in the bar to move the whole group. Ungroup or Quit puts every window back where it was.</li></ul>
+</section>
+<section class="support-section" id="beta" aria-labelledby="beta-title">
+<h2 id="beta-title">About the beta</h2>
+<p>TabDock is free while it is in beta. Each beta expires 60 days after it was built: it keeps working, but asks you to download the current version so your reports match the latest fixes. TabDock checks this page twice a day for a newer beta and tells you when one is available.</p>
+<p>Every app handles its windows a little differently, so the most useful reports name the apps you grouped and what happened.</p>
+</section>
+<section class="support-section" id="data-privacy" aria-labelledby="data-privacy-title">
+<h2 id="data-privacy-title">Data &amp; privacy</h2>
+<p>TabDock never reads screen contents and does not need screen recording permission. Window positions and your last group stay on your Mac; window titles are stored only as hashes. TabDock has no account, analytics or ads.</p>
+<p>The only network request is the beta update check, which downloads <a href="beta.json">beta.json</a> from this site. Problem reports are emails you send yourself; you can read the attached diagnostics before sending. They contain app and macOS versions, the names of the grouped apps and recent error messages, never window titles or contents.</p>
+</section>
+<section class="support-section" id="help" aria-labelledby="help-title">
+<h2 id="help-title">Help &amp; troubleshooting</h2>
+<h3>Report a problem</h3>
+<ul><li>Choose Report a Problem … in the TabDock menu bar menu or the group menu at the right end of the tab bar. It opens an email to us with the diagnostics filled in; add what happened and, if you can, a screenshot or short screen recording.</li></ul>
+<h3>Arrow-key shortcuts don’t switch tabs</h3>
+<ul><li>Another app already uses <kbd>⌃⌥←</kbd> / <kbd>⌃⌥→</kbd>; window managers such as Rectangle do by default. Change the prefix in TabDock → Settings, or use <kbd>⌃⌥1</kbd>–<kbd>⌃⌥9</kbd>.</li></ul>
+<h3>A window doesn’t appear in the list</h3>
+<ul><li>Full-screen windows, dialogs and windows on other Spaces can’t be grouped. Leave full screen or move the window to the current Space, then try again.</li></ul>
+<h3>TabDock says it needs Accessibility access again</h3>
+<ul><li>This can happen after replacing the app with a newer beta. Turn TabDock off and on again under System Settings → Privacy &amp; Security → Accessibility.</li></ul>
+<div class="contact-panel card"><h3>Contact</h3>
+<p>Email <a href="mailto:support@mmcapitals.com?subject=TabDock%20beta">support@mmcapitals.com</a>. Report a Problem … in the app fills in the details for you.</p>
+</div>
+</section>
+
+</main>
+<footer>
+        <div class="wrap app-footer">
+            <nav aria-label="Footer navigation">
+                <a href="../">All apps</a>
+                <a href="./">Beta &amp; support</a>
+            </nav>
+            <a class="footer-contact" href="mailto:support@mmcapitals.com?subject=TabDock%20beta">support@mmcapitals.com</a>
+            <p>© 2026 Mohamed Makled</p>
+        </div>
+    </footer>
+</body>
+</html>
